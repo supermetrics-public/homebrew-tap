@@ -61,7 +61,3 @@ the exact binaries Supermetrics releases.
 ### Why doesn't Supermetrics maintain formulae in the `homebrew-core` (main tap)?
 
 Homebrew's core team prefers to keep `homebrew-core` as community maintained and built from source to maintain consistency across vendors in terms of expectations around contents and updates. See [relevant discussion](https://discourse.brew.sh/t/maintenance-of-formulas-by-vendor/7649) for more information.
-
-## Contributing
-
-Check out our [contribution guidelines for this project](./CONTRIBUTING.md)

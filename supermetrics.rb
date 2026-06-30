@@ -5,20 +5,20 @@
 class Supermetrics < Formula
   desc "Command-line interface for the Supermetrics API"
   homepage "https://github.com/supermetrics-public/supermetrics-cli"
-  version "0.4.0"
+  version "0.4.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/supermetrics-public/supermetrics-cli/releases/download/v0.4.0/supermetrics-cli_0.4.0_darwin_amd64.tar.gz"
-      sha256 "223654557686e00101beb5e89c2b872bb976a7e60441d6ebdc6bfb7ee16b2a73"
+      url "https://github.com/supermetrics-public/supermetrics-cli/releases/download/v0.4.2/supermetrics-cli_0.4.2_darwin_amd64.tar.gz"
+      sha256 "4e1649975445b791652715b0c87efc28be9be7782755819cd59903f8f8f6234f"
 
       define_method(:install) do
         bin.install "supermetrics"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/supermetrics-public/supermetrics-cli/releases/download/v0.4.0/supermetrics-cli_0.4.0_darwin_arm64.tar.gz"
-      sha256 "70870c89de837d218f969ba82a3a0cf298a27a30b65c6765e3fe3b92c7690900"
+      url "https://github.com/supermetrics-public/supermetrics-cli/releases/download/v0.4.2/supermetrics-cli_0.4.2_darwin_arm64.tar.gz"
+      sha256 "02f5d679652581dd534e301144f0c79a5baf947d29d0ece29f13c9db4357df32"
 
       define_method(:install) do
         bin.install "supermetrics"
@@ -28,15 +28,15 @@ class Supermetrics < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/supermetrics-public/supermetrics-cli/releases/download/v0.4.0/supermetrics-cli_0.4.0_linux_amd64.tar.gz"
-      sha256 "e31a7c55d41edda40d09fce9ba93b9b50c48edbfc9332f84c31d430ab4e8780e"
+      url "https://github.com/supermetrics-public/supermetrics-cli/releases/download/v0.4.2/supermetrics-cli_0.4.2_linux_amd64.tar.gz"
+      sha256 "39dfdd42a1828bfa741ef5aff3f45ce619c68f34f448fe1c724afe10e29ea909"
       define_method(:install) do
         bin.install "supermetrics"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/supermetrics-public/supermetrics-cli/releases/download/v0.4.0/supermetrics-cli_0.4.0_linux_arm64.tar.gz"
-      sha256 "57c12348652c3284b4f90bdab34824d542e2697fba8ce134963f624909fbd6cd"
+      url "https://github.com/supermetrics-public/supermetrics-cli/releases/download/v0.4.2/supermetrics-cli_0.4.2_linux_arm64.tar.gz"
+      sha256 "666190d2d3f3d222cdcc9c5a2c3d0594dd761af80e44fa90abc289131ac1e5c9"
       define_method(:install) do
         bin.install "supermetrics"
       end
